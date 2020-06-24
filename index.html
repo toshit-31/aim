@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>
+            Flick Shot
+        </title>
+        <link rel= 'stylesheet' href= 'main.css'/>
+    </head>
+    <body>
+        <div id= 'menu_cont'>
+            <div class= 'block' data-head= 'Player'>
+                <label for= '_play_name' class= '_lbl'>Player's Name</label>
+                <input id= '_play_name' class= '_inp'>
+            </div>
+            <div class= 'block' id= 'mouse_sent' data-head= 'Mouse Sensitivity'>
+                <label for= 'sent_factor' class= '_lbl focused'>Mouse Sensitivity</label>
+                <input type= 'number' min= '0.5' max= '3' step= '0.1' value= '1' id= 'sent_factor' class= '_inp'>
+                <div id= 'sent_disp'>
+                    <div id= 'curs'></div>
+                </div>
+            </div>
+            <div class= 'block' id= 'time' data-head= 'Time Settings'>
+                <label for= 'ref' class= '_lbl focused'>Target refreshes in (secs)</label>
+                <input type= 'number' min= '2' max= '4' step= '0.5' value= '1' id= 'ref' class= '_inp'>
+                <br>
+                <label for= 'stay' class= '_lbl focused'>Target stays for (secs)</label>
+                <input type= 'number' min= '1' max= '2' step= '0.5' value= '1' id= 'stay' class= '_inp'>
+            </div>
+            <button id= 'start' class= 'btn'>Start</button>
+        </div>
+        <div id= 'prop_target'>
+            <div class= 'target_area' data-point= 'o'>
+                <div class= 'target_area' data-point= 'm'>
+                    <div class= 'target_area' data-point= 'c'>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class= 'block' id= 'score_card'>
+            <span id= '_name'>Player</span>
+            <span id= '_score'>0</span>
+            <ul></ul>
+        </div>
+        <img src= 'crosshair.png' id= 'prop_cross'>
+        <script src= 'event_handling.js'></script>
+        <script src= 'init.js'></script>
+    </body>
+</html>
