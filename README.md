@@ -1,3 +1,3 @@
 # Aim Practice
 
-https://webd-t31.github.io/aim/
+https://toshit-31.github.io/aim/
